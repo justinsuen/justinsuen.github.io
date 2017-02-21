@@ -1,53 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700');
+
 body {
-  background-size: cover;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-overlay {
-  background-color: rgba(255, 255, 255);
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  padding: 0;
+h1 {
+  font-size: 5em;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-overlay h1 {
-  font: normal 500% 'Arvo', serif;
-  font-weight: 600;
-  color: #000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  overflow: hidden;
-  white-space: nowrap;
+a {
+  text-decoration: none;
+  color: rgb(224, 134, 13);
 }
 
-@media only screen and (min-width: 960px) {}
-
-
-/* Normal */
-
-@media only screen and (min-width: 40em) {}
-
-
-/* Responsive for 40em */
-
-@media only screen and (max-width: 40em) {
-  overlay h1 {
-    font: normal 300% 'Arvo', serif;
-  }
-}
-
-
-/* Responsive for phones */
-
-@media only screen and (max-width: 480px) {
-  overlay h1 {
-    font: normal 200% 'Arvo', serif;
-  }
+a:hover {
+  color: rgb(201, 85, 0);
 }
